@@ -1,20 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- this is my comment that i wil write to test-->
-        <style>
-            
-            /*this is the begging of css*/
-            .title{
+        <!-- Header info-->
+        <meta charset="utf-8">
+        <style type:'text/css'>
+            /*Changing default attributes*/
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+            }
+            /*Adding the attributes class*/
+            .container{
+                display:flex;
+                flex-direction: column;
+                width:95%;
+                background-color: #fde3c1;
+                padding: 30px;
+                margin:auto;
+                min-height: fit-content;
+            }
+            .container .bodyContainer{
+                display:flex;
+                flex-direction: row;
+                padding-block: 10px;
+                width:auto;
+            }
+            .container .contentContainer{
+                display: flex;
+                flex-direction: column;
+                min-height: fit-content;
+                width: 80%;
+            }
+            .container .title{
+                display: flex;
+                flex-direction: column;
+                min-height: fit-content;
+                text-align: right;
                 background-color: turquoise;
+                padding: 10px;
+                border-style: solid;
             }
-            .sidePanel{
+            .continer .title h2{
+                font-size: 1.8em;
+            }
+            .container .bodyContainer .sidePanel{
+                display: flex;
+                flex-direction: column;
+                width: 20%;
                 background-color: blueviolet;
+                max-height: fit-content;
+                padding: 10px;
+                border-style: solid;
+                margin-right: 10px;
+                margin-bottom: auto;
             }
-            .content{
-              background-color: greenyellow;  
+            .container .bodyContainer .content{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                background-color: greenyellow;
+                border-style: solid;
+                text-align: left;
+                min-height: 200px;
+                margin-bottom: 10px;
+            }
+            time{
+                text-decoration: underline;
+            }
+
+            body{
+                background-color: black;
+                display: flex;
+                flex-direction: column;
             }
         </style>
     </head>
-
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Edwin's Movie Page!</h1>
+                <h3>Favorite movies for every genre!</h3>
+            </div>
+            <div class="bodyContainer">
+                <div class="sidePanel">
+                    <h1>The Side Pannel</h1>
+                    <h2>Content 1</h2>
+                    <h2>Content 2</h2>
+                    <h2>Content 3</h2>
+                    <h2>Content 4</h2>
+                </div>
+                <div class="contentContainer">
+                <div class="content">
+                    <h2><time>10/9/2022</time>: Title of Something</h2>
+                    <p>This is the description of what the content of this box is going to be about!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
 </html>

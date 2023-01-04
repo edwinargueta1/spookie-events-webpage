@@ -11,6 +11,11 @@
                 font-family: Arial, Helvetica, sans-serif;
                 box-sizing: border-box;
             }
+            /*Togglable Yellow Highlight function!*/
+            *:not(body) :not(.container) :hover{
+                background-color:rgba(255, 255, 0, 0.24)
+            }
+
             /*Adding the attributes class*/
             .container{
                 display:flex;
@@ -19,7 +24,10 @@
                 background-color: #fde3c1;
                 padding: 30px;
                 margin:auto;
+                margin-top: 10px;
                 min-height: fit-content;
+                border-style: solid;
+                border-width: 4px;
             }
             .container .bodyContainer{
                 display:flex;
@@ -38,12 +46,13 @@
                 flex-direction: column;
                 min-height: fit-content;
                 text-align: right;
-                background-color: turquoise;
+                background-color: orange;
                 padding: 10px;
                 border-style: solid;
+                border-width:1px;
             }
-            .continer .title h2{
-                font-size: 1.8em;
+            .container .title h2{
+                font-size: 0.8em;
             }
             .container .bodyContainer .sidePanel{
                 display: flex;
@@ -53,23 +62,45 @@
                 max-height: fit-content;
                 padding: 10px;
                 border-style: solid;
+                border-width: 4px;
                 margin-right: 10px;
                 margin-bottom: auto;
+            }
+            .container .bodyContainer .sidePanel ul:hover{
+                color: red;
+                text-decoration: underline;
             }
             .container .bodyContainer .content{
                 display: flex;
                 flex-direction: column;
                 padding: 10px;
-                background-color: greenyellow;
+                background-color: rgb(58, 179, 58);
                 border-style: solid;
+                border-width: 2px;
                 text-align: left;
                 min-height: 200px;
                 margin-bottom: 10px;
             }
-            time{
+            .container .bodyContainer .content h2{
+                margin-bottom: 20px;
+            }
+            .time{
                 text-decoration: underline;
             }
+            .description{
+                display: flex;
+                flex-direction: row;
+                max-height: fit-content;
+            }
+            .description p{
+                width: 80%;
 
+            }
+            .description img{
+                width:125px;
+                height: 125px;
+                float: right;
+            }
             body{
                 background-color: black;
                 display: flex;
@@ -80,21 +111,39 @@
     <body>
         <div class="container">
             <div class="title">
-                <h1>Edwin's Movie Page!</h1>
-                <h3>Favorite movies for every genre!</h3>
+                <h1>Edwin's Spookie Spots!</h1>
+                <h2>Favorite Spookie Places to go to this Halloween!</h2>
             </div>
             <div class="bodyContainer">
                 <div class="sidePanel">
-                    <h1>The Side Pannel</h1>
-                    <h2>Content 1</h2>
-                    <h2>Content 2</h2>
-                    <h2>Content 3</h2>
-                    <h2>Content 4</h2>
+                    <h1>Friends</h1>
+                    <ul>Robert </ul>
+                    <ul>Alice </ul>
+                    <ul>Kimberly </ul>
+                    <ul>Diana </ul>
+                    <ul>Jerry </ul>
                 </div>
                 <div class="contentContainer">
                 <div class="content">
-                    <h2><time>10/9/2022</time>: Title of Something</h2>
-                    <p>This is the description of what the content of this box is going to be about!</p>
+                    <h2><span class="time">10/9/2022</span>: Shaqtoberfest</h2>
+                    <div class="description">
+                    <p>Shaqtoberfest is a massive Halloween festival in Long Beach, California now open through Halloween. With The Historic Queen Mary as the backdrop, Shaqtoberfest is the ultimate Halloween destination this October!</p>
+                    <img src="https://lahiphopevents.com/wp-content/uploads/2022/07/shaqtober-fest-.jpg" alt ="Shaqtoberfest!">
+                    </div>  
+                </div>
+                <div class="content">
+                    <h2><span class="time">10/4/2022</span>: Haunted Hayride</h2>
+                    <div class="description">
+                    <p>Los Angeles' Ultimate Halloween Event is back and better than ever! With all-new attractions for the 2022 season, this is an event you won't want to miss!</p>
+                    <img src="https://www.haunting.net/wp-content/uploads/2016/12/LA-Haunted-Hayride.jpg" alt ="Haunted Hayride LA!">
+                    </div>
+                </div>
+                <div class="content">
+                    <h2><span class="time">10/1/2022</span>: Mr.Bones</h2>
+                    <div class="description">
+                    <p>Mr. Bones Pumpkin Patch offers customers high-quality pumpkins and merchandise while providing them with a fun-filled family experience. We believe in family and community, and in fostering those connections through holiday celebrations.</p>
+                    <img src="https://fever.imgix.net/plan/photo/942dc68c-487c-11ed-ade2-aa564cae9dec.jpg?w=550&h=550&auto=format&fm=jpg" alt ="Mr.Bonesss">
+                    </div>
                 </div>
             </div>
             </div>

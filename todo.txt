@@ -1,0 +1,36 @@
+Following Specs for the Assigenment:
+
+
+● The <time> tag for the blog date should be enclosed within its own span which can be individually
+styled.
+
+
+
+
+
+
+● The images should float on the right side of a blog entry next to the surrounding text. They must
+stay within the bounds of the enclosing box, and not bleed into other content.
+
+● The white containing box should have a solid, black, 4-px thick border.
+
+● The blog boxes should have have a solid, black, 2-px thick border.
+
+● The title box should have a solid, black, 1-px thick border.
+
+● The friends box should have a <h1> for “Friends” and a <ul> with hyperlink list items to each friend.
+The hyperlinks should be underlined and change color to red when moused-over (using the hover
+pseudoclass).
+
+● The friends box is a left-aligned independent div. The friends box should have a solid, black, 4-px
+thick border.
+
+● Set all padding/margins to best match the example above.
+
+● Use the universal selector (*) so that if you hover over ANY element, it is highlighted yellow.
+(This is a bit trickier than it may seem…you will need to EXCLUDE certain elements from this
+behavior, like the html and body tag for instance.)
+○ BE SURE TO USE THE UNIVERSAL SELECTOR! OTHER METHODS WILL LOSE CREDIT.
+○ Additionally, in your code, create a comment section which will easily allow me to toggle
+the background div’s highlight via commenting to test your code (I should only have to
+comment toggle one section of code).
